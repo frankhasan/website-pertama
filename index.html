@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Frank</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: #6c63ff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #4c44cc;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #6c63ff;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 1rem auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .contact-links a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact-links a:hover {
+            color: #4c44cc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1>Tentang Saya</h1>
+        <img src="fotoku2.jpeg" alt="Foto Profil" style="width: 150px; height: auto; border-radius: 10px;">
+        <p>Halo, saya Frank. Saya siswa di SMP Muhammadiyah Ahmad Dahlan 1 Aek Kanopan. Saya senang belajar teknologi dan desain.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <p>Saya suka mempelajari teknologi, desain web, dan pengembangan aplikasi.</p>
+        <div class="gallery">
+            <img src="it.jpeg" alt="Belajar Coding">
+            <img src="coding" alt="Desain Web">
+        </div>
+    </section>
+    
+
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <P>ini adalah  beberpa foto kenangan yang saya punya </P>
+        <div class="gallery">
+            <img src="hw.jpeg" alt="Foto HW">
+            <img src="singapur.jpeg" alt="Foto Singapur">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Hubungi saya melalui:</p>
+        <div class="contact-links">
+            <a href="https://instagram.com/frnkhsn" target="_blank">Instagram: @frnkhsn</a>
+            <a href="https://wa.me/62882016247624" target="_blank">WhatsApp: +62 882 0162 47624</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Terima kasih telah mengunjungi halaman saya!</p>
+    </footer>
+</body>
+</html>
